@@ -1,5 +1,5 @@
 # Separating_hyperplane
-<a href="url"><img src=https://github.com/CaptainFest/Separating_hyperplane/blob/master/separating_line.png align="center" height="360" width="480" ></a>
+<a href="url"><img src=https://github.com/CaptainFest/Separating_hyperplane/blob/master/img/separating_line.png align="center" height="360" width="480" ></a>
 ## Условие задачи
 Имеются два множества точек в декартовой прямоугольной системе координат. Точка с номером i (в условной нумерации) может принадлежать 1-му или 2-му множеству. Какому множеству принадлежит точка заранее известно. 
 
@@ -22,8 +22,8 @@
 ## Решение
 Решение строится из двух предположений. Два множества можно разделить гиперплоскостью, если их минимальная выпуклая оболочка не пересекается. А также если одна выпуклая оболочка не находится внутри другой.
 <br>
-<a href="url"><img src="https://github.com/CaptainFest/Separating_hyperplane/blob/master/case%201.bmp" align="float:left" height="333" width="419" ></a>
-<a href="url"><img src="https://github.com/CaptainFest/Separating_hyperplane/blob/master/case%202.bmp" align="float:right" height="333" width="419" ></a>
+<a href="url"><img src="https://github.com/CaptainFest/Separating_hyperplane/blob/master/img/case%201.bmp" align="float:left" height="333" width="419" ></a>
+<a href="url"><img src="https://github.com/CaptainFest/Separating_hyperplane/blob/master/img/case%202.bmp" align="float:right" height="333" width="419" ></a>
 <br>
 Случаи, когда эти свойства не выполняются показаны на картинках.<br>
 Итак, решение начинается с построения выпуклых оболочек с помощью метода Джарвиса. Это позволит как сократить количество рассматриваемых точек, так и проверить эти 2 свойства. Далее проверяем пересечение всех полученных отрезков одной выпуклой оболочки с другой. Данную проверку выполняет функция intersect() <br>
